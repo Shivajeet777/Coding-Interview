@@ -8,7 +8,7 @@ public class finalsss {
 		/*=================Question1)============ REVERSE A STRING =================*/
 		
 		
-		String str ="hello";
+	/*	String str ="hello";
 		
 		char [] ch = str.toCharArray();
 		
@@ -19,7 +19,7 @@ public class finalsss {
 			out.append(ch[i]);
 		}
 		
-		System.out.println(out);  
+		System.out.println(out);  */
 		
 		
 		/*=================Question2)============ SWAP TWO NUMBERS =================*/
@@ -399,7 +399,7 @@ public class finalsss {
 		
 		
 			
-			
+			/*========Question 18: Count number of zeroes in a number===========*/
 		
 		/*========Array-based Question===========*/
 		
