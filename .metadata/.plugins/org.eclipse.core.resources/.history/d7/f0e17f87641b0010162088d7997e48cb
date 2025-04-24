@@ -1,0 +1,11 @@
+package com.sk;
+
+public class PenMains implements Pen,PensSecond
+{
+	
+	public void walk()
+	{
+		System.out.println("he is walk");
+	}
+
+}

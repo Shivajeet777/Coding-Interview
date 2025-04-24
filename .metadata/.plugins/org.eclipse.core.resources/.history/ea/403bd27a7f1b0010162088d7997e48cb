@@ -1,0 +1,15 @@
+package com.sk;
+
+public class PenMain {
+
+	public static void main(String[] args) 
+	{
+		
+	  People obj = new People();
+	   Thread t1= new Thread(obj);
+	   t1.start();
+		
+
+	}
+
+}

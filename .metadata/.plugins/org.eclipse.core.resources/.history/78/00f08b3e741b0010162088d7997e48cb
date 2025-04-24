@@ -1,0 +1,17 @@
+package com.sk;
+
+public class PenMain {
+
+	public static void main(String[] args) 
+	{
+		
+		Singleton obj = new Singleton();
+		obj.getInstance();
+		obj.getInstance();
+		
+		
+		
+
+	}
+
+}

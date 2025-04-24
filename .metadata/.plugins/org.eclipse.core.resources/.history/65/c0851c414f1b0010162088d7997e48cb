@@ -1,0 +1,13 @@
+package com.ss;
+
+public class Mains {
+
+	public static void main(String[] args) 
+	{
+		int num =10;
+		Integer sk = num;
+		System.out.println(sk);
+
+	}
+
+}

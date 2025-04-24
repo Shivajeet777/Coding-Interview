@@ -1,0 +1,411 @@
+package com.sss;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class finalsss {
+
+	public static void main(String[] args) 
+	{
+		
+		/*=================Question1)============ REVERSE A STRING =================*/
+		
+		
+	/*	String str ="hello";
+		
+		char [] ch = str.toCharArray();
+		
+		StringBuilder out = new StringBuilder();
+		
+		for(int i=ch.length-1;i>=0;i--)
+		{
+			out.append(ch[i]);
+		}
+		
+		System.out.println(out);  */
+		
+		
+		/*=================Question2)============ SWAP TWO NUMBERS =================*/
+		
+	/*	int a =10;
+		int b =20;
+		a = a+b;
+		b =a-b;
+		a =a-b;
+		
+		System.out.println(a);
+		System.out.println(b);   */
+		
+
+		/*=================Question3)============ CONTAINS VOWELS ==================*/
+		
+		
+	/*	 String input = "hlla";
+		 
+		 input.toLowerCase();
+		 
+		 boolean hasVowel =false;
+		 
+		 for(int i=0;i<input.length();i++)
+		 {
+			 char ch = input.charAt(i);
+			 
+			 if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u')
+			 {
+				 hasVowel = true;
+			 }
+			 
+			 
+		 }
+		 
+		 if(hasVowel)
+		 {
+			 System.out.println("contains");
+		 }
+		 else
+		 {
+			 System.out.println("Not Contains");
+		 }
+		
+		
+		
+		*/
+		
+		
+
+		/*=================Question4)============ CHECK PRIME NUMBER ===============*/
+		
+		
+		            /*        int num = 17;
+		                    
+		                    boolean isPrime = false;
+		                    
+		                    for(int i=2;i<=Math.sqrt(num);i++)
+		                    {
+		                    	if(num %i==0)
+		                    	{
+		                    		isPrime = true;
+		                    	}
+		                    }
+		                    
+		                    if(isPrime)
+		                    {
+		                    	System.out.println("Not Prime");
+		                    }
+		                    else
+		                    {
+		                    	System.out.println("Prime");
+		                    }
+		                    
+		                    */
+		
+		
+		
+
+		/*=================Question5)============ FIBONACCI SERIES =================*/
+		
+		    /*        int count = 10;
+		            int a =0;
+		            int b =1;
+		            
+		            for(int i=1;i<count ;i++)
+		            {
+		            	System.out.print(a);
+		            	
+		            	if(i<count)
+		            	{
+		            		System.out.print(",");
+		            	}
+		            	
+		            	int next = a+b;
+		            	a =b;
+		            	b= next;
+		            	
+		            }
+		            
+		            
+		            */
+		            
+		           
+		               
+		              
+		
+
+		/*=================Question6)============ INTEGER CONTAINS ONLY ODD NUMBERS =*/
+		
+		  /*  List<Integer> list = Arrays.asList(22,4,6,8);
+		    
+		    boolean isOdd = true;
+		    
+		 for(int num:list)
+		 {
+			 if(num%2==0)
+			 {
+				 isOdd = false;
+			 }
+		 }
+		 
+		 
+		 if(isOdd)
+		 {
+			 System.out.println("list contains odd");
+		 }
+		 else
+		 {
+			 System.out.println("list does not contains odd");
+		 }
+		 
+		 
+		 */
+		
+		
+
+		/*=================Question7)============ CHECK PALINDROME =================*/
+		
+		
+	/*	String str = "MadaMs";
+		
+		boolean isPalindrome = true;
+		
+		for(int i=0;i<str.length()/2;i++)
+		{
+			
+			if(str.charAt(i)!=str.charAt(str.length()-i-1))
+			{
+				isPalindrome = false;
+			}
+			
+		}
+		
+		if(isPalindrome)
+		{
+			System.out.println("Palindrome");
+		}
+		else
+		{
+			System.out.println("Not Palindrome");
+		}
+		
+		
+		*/
+		
+		
+		
+		
+
+		/*=================Question8)============ REMOVE WHITESPACE ================*/
+		
+		
+		
+	/*	 String datas = "  Hello \t World \n Java  ";
+		 
+		 StringBuilder out = new StringBuilder();
+		 
+		 char[] ch = datas.toCharArray();
+		 
+		 for(int i=0;i<ch.length;i++)
+		 {
+			 if(!Character.isWhitespace(ch[i]))
+			 {
+				 out.append(ch[i]);
+			 }
+		 }
+		 
+		 System.out.println(out);   */
+		
+		
+		
+		
+
+		/*=================Question9)============ ARMSTRONG NUMBER =================*/
+		
+		
+		/*      int number=153;
+		      
+		      int countDigit = String.valueOf(number).length();
+		      
+		      int sum =0;
+		      
+		      boolean isArmStrong = false;
+		      
+		       int orignalNumber = number ;
+		       
+		      while(number!=0)
+		      {
+		    	  int lastDigit = number%10;
+		    	    sum += Math.pow(lastDigit, countDigit);
+		    	    number = number/10;
+		      }
+		      
+		      System.out.println(sum);
+		      
+		      if(sum==orignalNumber)
+		      {
+		    	  System.out.println("aRMSTRONG");
+		      }
+		      else
+		      {
+		    	  System.out.println("Not ArmStrong");
+		      }
+		     
+		     
+		     */
+		
+		
+		
+
+		/*=================Question10)=========== FACTORIAL ========================*/
+		
+		         /*   int n =5;
+		             int fact =1;
+		             
+		             for(int i=1;i<=n;i++)
+		             {
+		            	 fact = fact*i;
+		             }
+		             
+		             System.out.println(fact);   */
+		
+
+		/*=================Question11)=========== FIND A PERFECT NUMBER ============*/
+		
+		
+		/*	int number = 28;
+			
+			int sum =1;
+			
+			for(int i=2;i<Math.sqrt(number);i++)
+			{
+				if(number % i==0)
+				{
+					sum = sum+i;
+					
+					int pair = number/i;
+					
+					if(pair!=i)
+					{
+						sum = sum+pair;
+					}
+				}
+			}
+			
+			System.out.println(sum);   */
+			
+		    
+		
+
+		/*=================Question12)=========== COUNT NUMBER OF DIGITS ===========*/
+			
+		/*	int num= 123456;
+			
+			int count =0;
+			
+			while(num!=0)
+			{
+				num = num/10;
+				count++;
+			}
+			
+			System.out.println(count);   */
+			
+			
+			
+			
+			
+			
+			/*========Question 13: Count the number of digits in a number===========*/
+		
+		         
+
+			/*========Question 14: Reverse a number===========*/
+			
+		/*	int number =123456;
+			
+			int reversed =0;
+			
+			while(number!=0)
+			{
+				int lastDigit = number % 10;
+				reversed = reversed *10 + lastDigit;
+				number = number/10;
+			}
+			
+			System.out.println(reversed);  */
+			
+			
+			
+
+			/*========Question 15: Find GCD and LCM of two numbers===========*/
+		          
+		          /*   int a =28;
+		             int b =12;
+		             
+		             while(b!=0)
+		             {
+		            	 int temp = b;
+		            	  b = a%b;
+		            	  a =temp;
+		            	 
+		             }
+		             
+		             System.out.println(a);
+		             
+		             System.out.println(28*12/a);   */
+		           
+		   
+
+			/*========Question 16: Check if a number is Automorphic===========*/
+		             
+		           /*     int num =625;
+		                
+		                int square = num * num ;
+		                
+		                int countDigit = String.valueOf(num).length();
+		                
+		                if(square%Math.pow(10, countDigit)==num)
+		                {
+		                	System.out.println("Automorphic");
+		                }
+		                
+		                else
+		                {
+		                	System.out.println("Non-Automorhic");
+		                }   */
+		             
+		             
+
+			/*========Question 17: Check if a number is a Harshad number===========*/
+		
+		
+		                    int num =21;
+		                    
+		                    int temp =num;
+		                    
+		                    int sum =0;
+		                    
+		                    while(temp!=0)
+		                    {
+		                    	sum += temp%10;
+		                    	temp = temp/10;
+		                    }
+		                    
+		                    System.out.println(sum);
+		                    
+		                    if(num%sum==0)
+		                    {
+		                    	System.out.println("Harshad Number ");
+		                    }
+		                    else
+		                    {
+		                    	System.out.println("Not HarshadNumber");
+		                    }
+		
+		
+			
+			/*========Question 18: Count number of zeroes in a number===========*/
+
+		
+
+	}
+
+}

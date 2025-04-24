@@ -1,0 +1,25 @@
+package com.sk;
+
+public class People 
+{
+	
+	private int id;
+	private String name;
+	
+	
+	public People() {}
+
+
+	public People(int id, String name) {
+		super();
+		this.id = id;
+		this.name = name;
+	}
+	
+	public People(People p)
+	{
+		this.id=p.id;
+		this.name=p.name;
+	}
+
+}

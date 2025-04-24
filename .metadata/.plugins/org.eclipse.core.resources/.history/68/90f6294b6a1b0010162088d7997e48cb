@@ -1,0 +1,21 @@
+package com.sk;
+
+public class PenMain {
+
+	public static void main(String[] args) 
+	{
+		
+		People obj = new People(101,"Shiv");
+		System.out.println(obj);
+		People obj2 = new People(obj);
+		
+		obj.setName("Rahul");
+		
+		System.out.println(obj);
+		
+		
+		
+
+	}
+
+}

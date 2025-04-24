@@ -1,0 +1,10 @@
+package com.sk;
+
+public class Pen 
+
+{
+	
+	private int id;
+	private String name;
+
+}

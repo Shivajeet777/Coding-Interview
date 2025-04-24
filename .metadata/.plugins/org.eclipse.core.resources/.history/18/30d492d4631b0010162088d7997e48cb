@@ -1,0 +1,11 @@
+package com.sk;
+
+public class PensSecond
+{
+	
+	public void display()
+	{
+		System.out.println("this is display");
+	}
+    
+}

@@ -1,0 +1,16 @@
+package com.sk;
+
+public class People 
+{
+	
+	class inner
+	{
+	    public void innerClass()
+	    {
+	    	System.out.println("innerClass");
+	    }
+	}
+	
+	
+
+}

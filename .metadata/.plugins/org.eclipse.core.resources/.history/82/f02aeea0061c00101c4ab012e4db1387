@@ -1,0 +1,21 @@
+package com.ss;
+
+public class sdsd {
+
+	public static void main(String[] args) 
+	{
+		String str ="hello";
+		
+		StringBuilder  out = new StringBuilder();
+		
+		char[] chars = str.toCharArray();
+		
+		
+		for(int i =0;i<str.length();i++)
+		{
+			
+		}
+
+	}
+
+}

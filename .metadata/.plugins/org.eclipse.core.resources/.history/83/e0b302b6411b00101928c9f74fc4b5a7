@@ -1,0 +1,112 @@
+package com.interview;
+
+public class Main2 {
+
+	
+	
+	  
+	
+	
+	
+	
+	public static void main(String[] args) 
+	{
+		
+		 /*=====================Count Number Of Digits==============*/
+		
+	/*	 int num = 12345;
+		
+		int sum = 0;
+		
+		
+		while(num!=0)
+		{
+			
+			int digit = num%10;
+			sum= sum+digit;
+			num=num/10;
+			
+			
+		}
+		
+		System.out.println(sum); */
+		
+		/**=====================Reverse a Number==============*/
+		
+	/*	int num = 12345;
+		
+		String nums = String.valueOf(num);
+		StringBuilder out = new StringBuilder();
+		
+		while(num!=0)
+		{
+			
+			int digit = num%10;
+			
+			out.append(digit);
+			
+			num=num/10;
+			
+			
+			
+		}
+		
+		System.out.println(out);  */
+		
+		
+		/**=====================Find **GCD** and **LCM** of two numbers==============*/
+		
+		
+	/*   int a = 12;
+		
+		int b=28;
+		
+		while(b!=0)
+		{
+			
+			int temp=b;
+			 b = a%b;
+			 a = temp;
+			
+		}
+		
+		int lcm =  12*28/a;
+		
+		System.out.println(lcm);   */
+		
+		/**=====================Check if a number is **automorphic**==============*/
+		
+		int num =76;
+		int square = num*num;
+		
+		if(square%100==num)
+		{
+			System.out.println("it is automorphic");
+		}
+		
+		else
+		{
+			System.out.println("Not automorphic");
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+     
+     
+       
+       
+          
+          
+          
+           
+     }
+
+}

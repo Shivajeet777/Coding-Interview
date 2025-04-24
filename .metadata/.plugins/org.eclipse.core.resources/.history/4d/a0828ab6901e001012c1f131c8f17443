@@ -1,0 +1,278 @@
+package com.ss;
+
+public class Practice {
+	
+	
+	 public static void rotateLeft1(int[] arr, int k) {
+	        
+	        for(int i =k;i<arr.length;i++)
+	        {
+	        	System.out.print(arr[i]+" ");
+	        }
+	        
+	        for(int i=0;i<k;i++)
+	        {
+	        	System.out.print(arr[i]+" ");
+	        }
+	        
+	        }
+
+	public static void main(String[] args) 
+	
+	
+	{
+		/*==========Question01=========*/
+		// Find the largest and smallest elements in an array
+		
+		
+		
+		
+//	    int [] arr = {1,2,3,4,5,6};
+//	    
+//	    int largest = arr[0];
+//	    
+//	    for(int i=1;i<arr.length;i++)
+//	    {
+//	    	if(arr[i] > largest)
+//	    	{
+//	    		largest = arr[i];
+//	    	}
+//	    }
+//	    
+//	    int smallest = arr[0];
+//	    
+//	    
+//	    for(int j=1;j<arr.length;j++ )
+//	    {
+//	    	if(arr[j] < smallest)
+//	    	{
+//	    		smallest = arr[j];
+//	    	}
+//	    }
+//	    
+//	    System.out.println(largest);
+//	    System.out.println(smallest);
+//	    
+		
+		
+		
+		/*==========Question2 - Sort an array (using Bubble Sort / Arrays.sort) =========*/
+		
+//		
+//		int[] arr = {64, 25, 12, 22, 11};
+//		
+//		   for(int i =0;i<arr.length-1;i++)
+//		   {
+//			   
+//			   for(int j=0;j<arr.length-i-1;j++)
+//			   {
+//				   
+//				   if(arr[j]>arr[j+1])
+//				   {
+//					   int temp = arr[j];
+//					   arr[j] = arr[j+1];
+//					   arr[j+1] = temp;
+//				   }
+//				   
+//			   }
+//			   
+//			 
+//			   
+//		   }
+//		   
+//		   for(int data:arr)
+//		   {
+//			   System.out.print(data + " ");
+//		   }
+//		
+		
+
+		/*==========Question3 - Find duplicate elements in an array =========*/
+		
+//		 int[] arr = {4, 2, 7, 2, 4, 8, 3, 1, 3,4};
+//		 
+//		 boolean[] visited = new boolean[arr.length];
+//		 
+//		 for(int i =0;i<arr.length-1;i++)
+//		 {
+//			 
+//			 if(!visited[i])
+//			 {
+//				 
+//				 boolean isDuplicate = false;
+//				 
+//				 for(int j=i+1;j<arr.length;j++)
+//				 {
+//					 
+//					 if(arr[i]==arr[j])
+//					 {
+//						 visited[j] = true;
+//						 isDuplicate = true;
+//					 }
+//					 
+//				 }
+//				 
+//				 if (isDuplicate) {
+//			            System.out.println(arr[i]);
+//			        }
+//			 }
+//			 
+//		 }
+//		 
+//		 
+//		
+
+		/*==========Question4 - Reverse an array =========*/
+		 
+//		  int[] arr = {11, 2, 7, 1, 9};
+//		 
+//		    
+//		  int start =0;
+//		  int end = arr.length-1;
+//		  
+//		  while(start<end)
+//		  {
+//			  int temp = arr[start];
+//			  arr[start] = arr[end];
+//			  arr[end] = temp;
+//			  
+//			  start++;
+//			  end--;
+//		  }
+//		  
+//
+//	        // Printing reversed array
+//	        System.out.print("\nReversed Array: ");
+//	        for (int num : arr) {
+//	            System.out.print(num + " ");
+//	        }
+//		 
+//		          
+		 
+		 
+
+		/*==========Question5 - Rotate an array (left/right) =========*/
+		
+		
+		
+		
+//		int[] arr = {10, 20, 30, 40, 50};
+//		
+//		
+//        int k = 3;
+//		
+//        rotateLeft1(arr.clone(),k);
+//		
+//       
+        
+        
+        
+		
+		
+		
+
+		/*==========Question6 - Find the second largest element in array =========*/
+		
+        
+        
+//		int[] arr = {10, 25, 40, 5, 70, 70};
+//
+//        int largest = 0;
+//        int secondLargest = 0;
+//
+//        for (int num : arr) {
+//            if (num > largest) {
+//                secondLargest = largest;  // update secondLargest before updating largest
+//                largest = num;
+//            } else if (num > secondLargest && num != largest) {
+//                secondLargest = num;  // this runs only if num is between largest and secondLargest
+//            }
+//        }
+//
+//        System.out.println("Largest: " + largest);
+//        System.out.println("Second Largest: " + secondLargest);
+//        
+        
+
+		/*==========Question7 - Find pairs with given sum =========*/
+        
+        
+//        int[] arr = {2, 7, 4, 5, 9, 1, 3};
+//        int targetSum = 10;
+//        
+//        for(int i=0;i<arr.length-1;i++)
+//        {
+//        	
+//        	for(int j=i+1;i<arr.length;i++)
+//        	{
+//        		if(arr[i]+arr[j]==targetSum)
+//        		{
+//        			System.out.println(arr[i] + " + " + arr[j] + " = " + targetSum);
+//        		}
+//        	}
+//        	
+//        }
+
+        
+        
+
+		/*==========Question8 - Merge two arrays =========*/
+        
+//        
+//        int[] arr1 = {1, 3, 5};
+//        int[] arr2 = {2, 4, 6};
+//        
+//        int[] merged = new int[arr1.length+arr2.length];
+//        
+//        for(int i=0;i<arr1.length;i++)
+//        {
+//        	merged[i]=arr1[i];
+//        }
+//        
+//        
+//        for(int i=0;i<arr2.length;i++)
+//        {
+//        	merged[arr1.length+i] = arr2[i];
+//        }
+//        
+//        
+//        for(int num:merged)
+//        {
+//        	System.out.println(num);
+//        }
+
+		/*==========Question9 - Remove duplicates from array =========*/
+        
+//        int[] arr = {4, 5, 4, 2, 5, 7, 2};
+//        
+//        List<Integer> unique = new ArrayList<>();
+//        
+//        
+//        for(int i =0;i<arr.length;i++)
+//        {
+//        	
+//        	if(!unique.contains(arr[i]))
+//        	{
+//        		unique.add(arr[i]);
+//        	}
+//        	
+//        }
+//        
+//        for(int num:unique)
+//        {
+//        	System.out.println(num);
+//        }
+        
+        
+        
+
+		/*==========Question10 - Find the missing number in an array (1 to n) =========*/
+		
+		
+		int[] arr = {1, 2, 4, 5}
+
+	}
+
+	
+
+}

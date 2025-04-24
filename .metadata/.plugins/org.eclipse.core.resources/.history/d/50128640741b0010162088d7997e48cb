@@ -1,0 +1,16 @@
+package com.sk;
+
+public class PenMain {
+
+	public static void main(String[] args) 
+	{
+		
+		Calculator cal = (a,b) -> a+b;s
+		cal(10,20);
+		
+		
+		
+
+	}
+
+}

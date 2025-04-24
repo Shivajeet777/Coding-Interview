@@ -1,0 +1,15 @@
+package com.sk;
+
+public class Pen 
+
+{
+	
+   public void start()
+   {
+	   System.out.println("hello this is start");
+   }
+  
+	
+	
+
+}

@@ -1,0 +1,14 @@
+package com.sk;
+
+public class PenMain {
+
+	public static void main(String[] args) 
+	{
+		
+		PensSecond obj = new PensSecond();
+	   obj.start();
+		
+
+	}
+
+}

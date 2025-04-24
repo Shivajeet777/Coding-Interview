@@ -1,0 +1,201 @@
+package com.ss;
+
+public class Main {
+	
+	
+	
+	static boolean isAnagarm(String str1,String str2)
+	{
+		str1=str1.replaceAll(" ","").toLowerCase();
+		str2=str2.replaceAll(" ","").toLowerCase();
+		
+		if(str1.length()!=str2.length())
+		{
+			return false;
+		}
+		
+		int [] count = new int[26];
+		
+		for(int i=0;i<str1.length();i++)
+		{
+			count[str1.charAt(i)-'a']++;
+			count[str2.charAt(i)-'a']--;
+		}
+		
+		for(int i=0;i<26;i++)
+		{
+			if (count[i] != 0) 
+			{
+                return false;
+		     }
+			
+			
+		}
+		
+		
+		return true;
+		
+	}
+
+	public static void main(String[] args) 
+	
+	{
+		/*==========Question1 - Reverse a string =========*/
+		
+		
+	/*	String str ="hello";
+		
+		StringBuilder out = new StringBuilder();
+		
+		char[] ch = str.toCharArray();
+		
+		for(int i=ch.length-1;i>=0;i--)
+		{
+			out.append(ch[i]);
+		}
+		
+		System.out.println(out);   */
+		
+		
+		
+		
+		
+		
+		
+	
+		
+
+		/*==========Question2 - Check if a string is a palindrome =========*/
+		
+		/*   String str = "smadams";
+		   
+		   boolean isPalindrome = true;
+		   
+		   for(int i=0;i<str.length();i++)
+		   {
+			   if(str.charAt(i)!=str.charAt(str.length()-1-i))
+			   {
+				   isPalindrome = false;
+				   break;
+			   }
+			   
+		   }
+		   
+		   if (isPalindrome) {
+	            System.out.println(str + " is a palindrome");
+	        } else {
+	            System.out.println(str + " is not a palindrome");
+	        }
+	        
+	        */
+		   
+		
+		
+		
+
+		/*==========Question3 - Count vowels and consonants =========*/
+		
+		
+	/*	String str = "Hello World"; // Input string
+        str = str.toLowerCase(); // Convert to lowercase for uniformity
+
+        int vowels = 0;
+        int consonants = 0;
+
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+
+            // Check if character is a letter
+            if (ch >= 'a' && ch <= 'z') {
+                if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+                    vowels++;
+                } else {
+                    consonants++;
+                }
+            }
+        }
+
+        System.out.println("Vowels: " + vowels);
+        System.out.println("Consonants: " + consonants);   */
+		 
+
+		/*==========Question4 - Count the number of words =========*/
+        
+        
+	/*	 String str = "  Hello   world  this is   Java  "; // Input string
+
+	        int wordCount = 0;
+	        boolean inWord = false;
+
+	        for (int i = 0; i < str.length(); i++) {
+	            char ch = str.charAt(i);
+	            
+	            System.out.println(ch);
+
+	            // If character is a space
+	            if (ch == ' ' || ch == '\t' || ch == '\n') 
+	            {
+	                inWord = false;
+	            } else if (!inWord) {
+	                // First character of a new word
+	                inWord = true;
+	                wordCount++;
+	            }
+	        }
+
+	        System.out.println("Number of words: " + wordCount);   */
+        
+        
+        
+
+		/*==========Question5 - Check if two strings are anagrams =========*/
+	        
+	        
+	        
+	        
+	        String str1 = "listen";
+	        String str2 = "silent";
+	        
+
+	        if (isAnagarm(str1, str2)) {
+	            System.out.println("Strings are anagrams.");
+	        } else {
+	            System.out.println("Strings are not anagrams.");
+	        }
+	        
+	        
+	        
+	        
+
+		/*==========Question6 - Remove duplicate characters from a string =========*/
+	        
+	        String input = "programming";
+	        
+	        String result ="";
+	        
+	        
+	        for(int i=0;i<input.length();i++)
+	        {
+	        	char ch = input.charAt(i;)
+	        	
+	        	boolean found = false;
+	        	
+	        }
+	        
+	        
+	        
+	        
+	        
+
+		/*==========Question7 - Find the first non-repeated character =========*/
+
+		/*==========Question8 - Count the frequency of characters in a string =========*/
+
+		/*==========Question9 - Find the longest word in a string =========*/
+
+		/*==========Question10 - Convert string to title case (capitalize each word) =========*/
+
+
+	}
+
+}

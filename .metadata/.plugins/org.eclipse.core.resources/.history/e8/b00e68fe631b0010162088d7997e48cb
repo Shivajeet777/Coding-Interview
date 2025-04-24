@@ -1,0 +1,6 @@
+package com.sk;
+
+public class PenMains implements Pen,PensSecond
+{
+
+}

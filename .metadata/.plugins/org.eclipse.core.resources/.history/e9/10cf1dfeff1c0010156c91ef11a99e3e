@@ -1,0 +1,512 @@
+package com.ss;
+
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Optional;
+import java.util.OptionalDouble;
+import java.util.OptionalInt;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+
+public class Practice2 {
+
+	
+	
+	private static boolean isPrime(int num)
+	{
+		for(int i=2;i<=Math.sqrt(num);i++)
+		{
+			if(num % i==0)
+			{
+				return false;
+			}
+		}
+		
+		return true;
+		
+	}
+	
+	
+	
+	
+	
+	public static void main(String[] args) 
+	{
+
+		
+		
+	     List<Integer> numbers = Arrays.asList(10, 5, 7, 18, 3, 15,5);
+	     
+	     List<Integer> numbers2 = Arrays.asList(10, 5, 7, 18, 3, 15,5,25,75,78);
+	     
+	    
+		
+	     
+	     /*=========== 1) Write a program to find the sum of all elements in a list using Java Stream API ===========*/
+	     
+	            /*    int sum =    numbers.stream().mapToInt(Integer::intValue).sum();
+	                System.out.println(sum);  /*
+	     
+
+	     /*=========== 2) Given a list of integers, write a program to find and print the maximum element using Java Stream API ===========*/
+	     
+//	                             OptionalInt max =    numbers.stream().mapToInt(Integer::intValue).max();
+//	                             
+//	                             System.out.println(max);
+
+	     /*=========== 3) Write a program to filter out all the even numbers from a list using Java Stream API ===========*/
+	     
+//	                       List<Integer> even =    numbers.stream().filter(n -> n%2==0).collect(Collectors.toList());
+//	                       System.out.println(even);
+
+	     /*=========== 4) Given a list of strings, write a program to count the number of strings containing a specific character ‘a’ using Java Stream API ===========*/
+//	     
+//	                char target ='a';
+//	             long count =   strings.stream().filter(str -> str.contains(String.valueOf(target))).count();
+//	             
+//	             System.out.println(count);
+//	     
+	     
+
+	     /*=========== 5) Write a program to convert a list of strings to uppercase using Java Stream API ===========*/
+	     
+//	               List<String> upper =    strings.stream().map(String::toUpperCase).collect(Collectors.toList());
+//	               System.out.println(upper);
+//	     
+
+	     /*=========== 6) Given a list of integers, write a program to calculate the average of all the numbers using Java Stream API ===========*/
+	     
+//	     
+//	                            OptionalDouble average =       numbers.stream().mapToDouble(Integer::intValue).average();
+//	                            
+//	                            System.out.println(average);
+//	     
+
+	     /*=========== 7) Write a program to sort a list of strings in alphabetical order using Java Stream API ===========*/
+	     
+//	                  List<String> sorts =   strings.stream().sorted().collect(Collectors.toList());
+//	                  System.out.println(sorts);
+//	     
+	     
+
+	     /*=========== 8) Given a list of strings, write a program to concatenate all the strings using Java Stream API ===========*/
+	     
+//	                String join =   strings.stream().collect(Collectors.joining());
+//	                
+//	                System.out.println(join);
+//	     
+	     
+
+	     /*=========== 9) Write a program to find the longest string in a list of strings using Java Stream API ===========*/
+	     
+//	                              Optional<String> sk =    strings.stream().max((str1,str2) -> str1.length()-str2.length());
+//	                              System.out.println(sk);
+	                             
+	     
+
+	     /*=========== 10) Given a list of integers, write a program to find and print the second largest number using Java Stream API ===========*/
+	     
+	     
+//	                      Optional<Integer> second =    numbers.stream().sorted((num1,num2) -> num2-num1).skip(1).findFirst();
+//	                      
+//	                      System.out.println(second);
+
+	
+
+			/*===== 11) Write a program to remove all the duplicate elements from a list using Java Stream API =====*/
+	     
+	     
+//	                    List<Integer> sd =  numbers.stream().distinct().collect(Collectors.toList());
+//	                    
+//	                    System.out.println(sd);
+	    
+
+			/*===== 12) Given a list of strings, write a program to find and print the shortest string using Java Stream API =====*/
+	     
+//	     
+//	             Optional<String> sd =    strings.stream().max((str1,str2) -> str2.length()-str1.length());
+//	             
+//	             System.out.println(sd);
+	        
+	        
+
+			/*===== 13) Write a program to convert a list of integers to a list of their squares using Java Stream API =====*/
+	     
+//	               List<Integer> square =     numbers.stream().map(n -> n*n).collect(Collectors.toList());
+//	               
+//	               System.out.println(square);
+//	     
+	     
+
+			/*===== 14) Given a list of strings, write a program to find and print the strings starting with a specific prefix ‘a’ using Java Stream API =====*/
+	                         
+//	                            String target ="a";
+//	     
+//	                         List<String>  sk = strings.stream().filter(str -> str.startsWith(target)).collect(Collectors.toList());
+//	                         System.out.println(sk);
+
+			/*===== 15) Write a program to find the product of all elements in a list of integers using Java Stream API =====*/
+	     
+//	                  int ro =     numbers.stream().reduce(1, (a,b) -> a*b);
+//	                  System.out.println(ro);
+//	     
+	             
+
+			/*===== 16) Given a list of integers, write a program to find and print the prime numbers using Java Stream API =====*/
+//	     
+//	                   List<Integer> prime =    numbers.stream().filter(Practice2::isPrime).collect(Collectors.toList());
+//	                   System.out.println(prime);
+//	     
+	     
+
+			/*===== 17) Write a program to check if a list of strings contains a specific string using Java Stream API =====*/
+//	      
+//	                         String target ="apple";
+//	                         
+//	                     boolean avail =    strings.stream().anyMatch(str -> str.equals(target));
+//	                     System.out.println(avail);
+//	                   
+	             
+
+			/*===== 18) Given a list of strings, write a program to find and print the strings with length greater than a specified value 5 using Java Stream API =====*/
+//	     
+//	           List<String> sd =    strings.stream().filter(str -> str.length()>=5).collect(Collectors.toList());
+//	           System.out.println(sd);
+//	     
+	                   
+
+			/*===== 19) Write a program to filter out all the elements divisible by 3 and 5 from a list of integers using Java Stream API =====*/
+	      
+//	                List<Integer> num =    numbers.stream().filter(n -> n%3==0 && n%5==0).collect(Collectors.toList());
+//	                System.out.println(num);
+//	     
+
+			/*===== 20) Given a list of strings, write a program to find and print the strings with the maximum length using Java Stream API =====*/
+	     
+//	         Optional<String> sk =    strings.stream().max((str1,str2) -> str1.length()-str2.length());
+//	         System.out.println(sk);
+	        
+	        
+	        
+	             
+
+			/*===== 21) Write a program to reverse a list of strings using Java Stream API =====*/
+	     
+//	            List<String> sj =   IntStream.range(0, strings.size()).mapToObj(str -> strings.get(strings.size()-str-1)).collect(Collectors.toList());
+//	            
+//	            System.out.println(sj);
+//	               
+//	      
+	         
+
+			/*===== 22) Given a list of integers, write a program to find and print the distinct odd numbers using Java Stream API =====*/
+	     
+//	                    List<Integer> odd =    numbers.stream().filter(n -> n%2!=0).distinct().collect(Collectors.toList()); 
+//	                    
+//	                    System.out.println(odd);
+	           
+
+			/*===== 23) Write a program to remove all null values from a list of strings using Java Stream API =====*/
+	     
+//	                      List<String> sd =   strings.stream().filter(str -> str!=null).collect(Collectors.toList());
+//	                      System.out.println(sd);
+	                       
+
+			/*===== 24) Given a list of integers, write a program to find and print the sum of all odd numbers using Java Stream API =====*/
+	           
+//	                     Integer sk =      numbers.stream().filter(n -> n%2!=0).reduce(0, (a,b) -> a+b);
+//	                     System.out.println(sk);
+//	        
+
+			/*===== 25) Write a program to find the intersection of two lists of strings using Java Stream API =====*/
+//	     
+//	                      List<Integer> nu =      numbers.stream().filter(numbers2::contains).collect(Collectors.toList());
+//	                      System.out.println(nu);
+//	                            		
+	                            		
+	                            		
+
+			/*===== 26) Given a list of strings, write a program to find and print the strings containing only vowels using Java Stream API =====*/
+	     
+	                    
+
+			/*===== 27) Write a program to convert a list of strings to a comma-separated string using Java Stream API =====*/
+//	     
+//	                           String sd =     strings.stream().collect(Collectors.joining(","));
+//	                           System.out.println(sd);
+	     
+
+			/*===== 28) Given a list of integers, write a program to find and print the index of the first occurrence of a specific number using Java Stream API =====*/
+//	                       int target =5;
+//	     
+//	                      IntStream.range(0, numbers.size()).filter(n -> numbers.get(n)==target).findFirst();
+	     
+
+			/*===== 29) Write a program to find the union of two lists of integers using Java Stream API =====*/
+	     
+//	                  List<Integer> sh =    Stream.concat(numbers.stream(), numbers2.stream()).distinct().collect(Collectors.toList());
+//	                  System.out.println(sh);
+	     
+
+			/*===== 30) Given a list of strings, write a program to find and print the strings containing duplicate characters using Java Stream API =====*/
+//	     
+//	                    List<String> sh =      strings.stream().filter(s-> s.length()!=s.chars().distinct().count()).collect(Collectors.toList());
+//	                    
+//	                    System.out.println(sh);
+//	
+	     
+	     
+	     /*=========== 31) Write a program to check if all elements in a list of strings are of the same length using Java Stream API ===========*/
+	     
+//	         List<String> string = Arrays.asList("apple", "banana", "kiwi", "orange", "pear");
+//	         
+//	         
+//	         boolean sameLength =   string.stream().map(String::length).distinct().count()==1;
+//	         
+//	            System.out.println(sameLength);
+	         
+	        
+	     
+	          
+	      
+	         
+	     
+
+	     /*=========== 32) Given a list of integers, write a program to find and print the difference between the maximum and minimum numbers using Java Stream API ===========*/
+	         
+//	             List<Integer> number = Arrays.asList(10, 5, 7, 18, 3, 15);
+//	             
+//	        OptionalInt max =     number.stream().mapToInt(Integer::intValue).max();
+//	             
+//	        OptionalInt min =    number.stream().mapToInt(Integer::intValue).min();
+//	        
+//	        int res = max.getAsInt()- min.getAsInt();
+//	        
+//	        System.out.println(res);
+	                             
+
+
+	     /*=========== 33) Write a program to remove all whitespace from a list of strings using Java Stream API ===========*/
+	     
+	     
+//	      List<String> strings = Arrays.asList("apple", "ba nana", "kiwi", "oran ge", "pear");
+//	      
+//	    List<String> res =  strings.stream().map(str -> str.replaceAll("\\s", "")).collect(Collectors.toList());
+//	    
+//	    System.out.println(res);
+//	         
+//	         
+	        
+	         
+	         
+	         
+
+	     /*=========== 34) Given a list of strings, write a program to find and print the strings containing a specific substring using Java Stream API ===========*/
+//	    
+//	    
+//	    List<String> strings = Arrays.asList("apple", "banana", "kiwi", "orange", "pear");
+//        String substring = "an";
+//        
+//   List<String> res =     strings.stream().filter(str -> str.contains(substring)).collect(Collectors.toList());
+//   
+//   System.out.println(res);
+	         
+
+	                                  
+	                                  
+	         
+
+	     /*=========== 35) Write a program to find the mode of a list of integers using Java Stream API ===========*/
+	     
+//	     
+//	     List<Integer> number = Arrays.asList(1, 2, 3, 3, 4, 4, 4, 5, 5);
+//	     
+//	  Map<Object, Long> num =   number.stream().collect(Collectors.groupingBy(s -> s, Collectors.counting()));
+//	  
+//	               long max =     num.values().stream().mapToLong(Long::longValue).max().orElse(0);
+//	               
+//	          List<Object> res =     num.entrySet().stream().filter(entry -> entry.getValue()==max).map(Map.Entry::getKey).collect(Collectors.toList());
+//	          
+//	          System.out.println(res);
+	     
+	     
+	                           
+	                       
+	                       
+	     
+
+	     /*=========== 36) Given a list of strings, write a program to find and print the strings with the minimum length using Java Stream API ===========*/
+	     
+	     List<Integer> number = Arrays.asList(1, 2, 3, 3, 4, 4, 4, 5, 5);
+	     
+	    Map<Object, Long> frequency = number.stream().collect(Collectors.groupingBy(s -> s, Collectors.counting()));
+	    
+	  OptionalInt min =  frequency.values().stream().mapToLong(Long::longValue).min().orElse(0);
+	     
+	                      
+	      
+
+	     /*=========== 37) Write a program to find the frequency of each element in a list of integers using Java Stream API ===========*/
+	     
+
+
+	     /*=========== 38) Given a list of strings, write a program to find and print the strings with the maximum number of vowels using Java Stream API ===========*/
+	     
+	     
+	                              
+
+	     /*=========== 39) Write a program to check if a list of integers is sorted in ascending order using Java Stream API ===========*/
+
+	     /*=========== 40) Given a list of strings, write a program to find and print the strings with the minimum number of vowels using Java Stream API ===========*/
+
+	     /*=========== 41) Write a program to find the median of a list of integers using Java Stream API ===========*/
+//	     
+//	          List<Integer> data = Arrays.asList(1, 2, 3, 4, 5,6);
+//	          OptionalDouble median =     data.stream().mapToInt(Integer::intValue).sorted().skip((data.size()-1)/2).limit(data.size()%2==0 ? 2:1).average();
+//	          
+//	          System.out.println(median);
+	     
+	     
+
+	     /*=========== 42) Given a list of strings, write a program to find and print the strings containing a specific character at least twice using Java Stream API ===========*/
+	          
+	          
+//	          List<String> string = Arrays.asList("apple", "banana", "kiwi", "orange", "pear");
+//	          
+//	            char ch ='a';
+//	          
+//	          List<String>  result =   string.stream().filter(str -> str.chars().filter(c -> c==ch).count()>=2).collect(Collectors.toList());
+//	          System.out.println(result);
+	          
+
+	     /*=========== 43) Write a program to find the kth smallest element in a list of integers using Java Stream API ===========*/
+	     
+//	     List<Integer> data = Arrays.asList(3, 1, 4, 1, 5, 9, 2, 6, 5);
+//	     int k =3;
+//	     
+//	     OptionalInt res =   data.stream().mapToInt(Integer::intValue).sorted().skip(k-1).findFirst();
+//	  System.out.println(res);
+	     
+	     
+
+	     /*=========== 44) Given a list of strings, write a program to find and print the strings with the maximum number of consonants using Java Stream API ===========*/
+	  
+//	     List<String> data = Arrays.asList("apple", "banana", "kiwi", "orange", "pear");
+//	     
+//	     Map<String, Long> frequencyMap =     data.stream().collect(Collectors.toMap(s -> s, s -> s.chars().filter(c ->  "BCDFGHJKLMNPQRSTVWXYZbcdfghjklmnpqrstvwxyz".indexOf(c)!=-1).count()));
+//	     
+//	  long max =  frequencyMap.values().stream().mapToLong(Long::longValue).max().orElse(0);
+//	  
+//	     List<String> res = frequencyMap.entrySet().stream().filter(entry -> entry.getValue()==max).map(Map.Entry::getKey).collect(Collectors.toList());
+//	     
+//	     System.out.println(res);
+	   
+
+	     /*=========== 45) Write a program to check if a list of strings is palindrome using Java Stream API ===========*/
+	     
+//	       List<String> data = Arrays.asList("apple", "banana", "kiwi", "banana", "apple");
+//	       
+//	     
+//	      boolean res =  data.stream().skip(data.size()/2).allMatch(s -> s.equals(data.get(data.size()-1-data.indexOf(s))));
+//	      
+//	      System.out.println(res);
+//	     
+//	     
+
+	     /*=========== 46) Given a list of integers, write a program to find and print the elements with the highest frequency using Java Stream API ===========*/
+//	     
+//	     List<Integer> number = Arrays.asList(1, 2, 3, 3, 4, 4, 4, 5, 5);
+//	     
+//	 Map<Object, Long> frequency =    number.stream().collect(Collectors.groupingBy(s->s, Collectors.counting()));
+//	 
+//	long max = frequency.values().stream().mapToLong(Long::longValue).max().orElse(0);
+//	
+//	 List<Object> res =frequency.entrySet().stream().filter(entry -> entry.getValue()==max).map(Map.Entry::getKey).collect(Collectors.toList());
+//	 
+//	 System.out.println(res);
+	 
+	 
+	 
+	   
+	     
+	     
+	     
+	     
+	     
+
+	     /*=========== 47) Write a program to remove all non-numeric characters from a list of strings using Java Stream API ===========*/
+	     
+	     
+//	     List<String> string = Arrays.asList("a1b2c3", "1a2b3c", "123abc");
+//	     
+//	     List<String>  res = string.stream().map(str -> str.replaceAll("[^a-z]", "")).collect(Collectors.toList());
+//	     
+//	     System.out.println(res);
+//	     
+//	                                  
+	     
+
+	     /*=========== 48) Given a list of strings, write a program to find and print the strings containing only digits using Java Stream API ===========*/
+	     
+//	     List<String> string = Arrays.asList("123", "abc", "456", "789", "def");
+//	     
+//	   List<String> res =  string.stream().map(str -> str.replaceAll("[^0-9]", "")).collect(Collectors.toList());
+//	   
+//	   System.out.println(res);
+//	     
+	          
+	          
+	        
+	               
+
+	     /*=========== 49) Write a program to find the kth largest element in a list of integers using Java Stream API ===========*/
+	     
+	     
+//	        List<Integer> number = Arrays.asList(3, 1, 4, 1, 5, 9,9,9, 2, 6, 5);
+//             int k = 3;
+//             
+//             
+//            Optional<Integer> res = number.stream().sorted(Comparator.reverseOrder()).distinct().skip(k-1).findFirst();
+//            
+//            System.out.println(res);
+
+	     /*=========== 50) Given a list of integers, write a program to find and print the elements with the lowest frequency using Java Stream API ===========*/
+            
+//            List<Integer> number = Arrays.asList(1, 2, 3, 3, 4, 4, 4, 5, 5);
+//            
+//            
+//        Map<Object, Long> frequency =    number.stream().collect(Collectors.groupingBy(s->s, Collectors.counting()));
+//        
+//        System.out.println(frequency);
+//        
+//    long max =    frequency.values().stream().mapToLong(Long::longValue).min().orElse(0);
+//    
+//    List<Object> res =   frequency.entrySet().stream().filter(entry -> entry.getValue()==max).map(Map.Entry::getKey).collect(Collectors.toList());
+//    
+//    System.out.println(res);
+            
+            
+
+	     
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+		
+		
+		
+		
+	}
+}

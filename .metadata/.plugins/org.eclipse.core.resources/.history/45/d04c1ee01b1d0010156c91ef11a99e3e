@@ -1,0 +1,236 @@
+package com.practice;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class Practices {
+
+	public static void main(String[] args)
+{
+
+		/*==========Question 1: REVERSE A STRING==========*/
+		
+		    String str ="hello";
+		    
+		    char [] ch =  str.toCharArray();
+		    
+		    StringBuilder out = new StringBuilder();
+		    
+		     for(int i = ch.length-1;i>=0;i--)
+		     {
+		    	 out.append(ch[i]);
+		     }
+		     
+		     System.out.println(out);
+	      
+
+		/*==========Question 2: SWAP TWO NUMBERS==========*/
+		     
+//		     int a =10;
+//		     int b =20;
+//		     
+//		      a = a+b;
+//		      b = a-b;
+//		      a = a-b;
+//		      
+//		      System.out.println(a);
+//		      System.out.println(b);
+//		     
+//		     
+		     
+		     
+		     
+
+		/*==========Question 3: CONTAINS VOWELs==========*/
+		      
+		      String word = "Psdsd";
+		      
+		      boolean hasVowel = false;
+		      
+		      word = word.toLowerCase();
+		      
+		      
+		      for(int i=0;i<word.length();i++)
+		      {
+		    	  
+		    	char ch1 =  word.charAt(i);
+		    	
+		    	if(ch1=='a' || ch1=='e' || ch1=='i' || ch1=='o' || ch1=='u')
+		    	{
+		    		hasVowel = true;
+		    		
+		    		break;
+		    	}
+		    	  
+		    	  
+		      }
+		      
+		      if (hasVowel) {
+	              System.out.println("The string contains a vowel.");
+	          } else {
+	              System.out.println("The string does NOT contain any vowels.");
+	          }
+		      
+		      
+		      
+
+		/*==========Question 4: CHECK PRIME NUMBER==========*/
+		      
+		      int digit = 11;
+		      
+		      boolean hasPrime = true;
+		      
+		       for(int i =2;i<=Math.sqrt(digit);i++)
+		       {
+		    	   if(digit % i ==0)
+		    	   {
+		    		   hasPrime = false;
+		    		   break;
+		    	   }
+		       }
+		       
+		       if(hasPrime)
+		       {
+		    	   System.out.println("Prime");
+		       }
+		       else
+		       {
+		    	   System.out.println("Non-Prime");
+		       }
+		      
+		      
+
+		/*==========Question 5: Fibonacci Series==========*/
+		       
+		       int count =10;
+		       
+		       int a = 0;
+		       int b =1;
+		       
+		       for(int i = 0;i<=count;i++)
+		       {
+		    	   System.out.print(a);
+		    	   
+		    	   if(i<count)
+		    	   {
+		    		   System.out.print(",");
+		    	   }
+		    	   
+		    	   int next = a+b;
+		    	    b =a;
+		    	    a = next;
+		    	   
+		       }
+		       
+		       
+
+		/*==========Question 6: Integer contains only odd Number==========*/
+		       
+		       List<Integer> list = Arrays.asList(1,2,3,4,5,7,8,5,7);
+		       
+		       
+		       List<Integer> list2 = new ArrayList<>();
+		       
+		       for(int ch1:list)
+		       {
+		    	   if(ch1%2!=0)
+		    	   {
+		    		   
+		    		   list2.add(ch1);
+		    	   }
+		       }
+		       
+		       System.out.println(list2);
+		       
+		      
+		       
+		       
+		       
+		       
+
+		/*==========Question 7: Check Palindrome==========*/
+		       
+		       
+		       String words ="112115";
+		       
+		       boolean checkPalindrome = true;
+		       
+		       for(int i=(words.length()-1)/2;i>=0;i--)
+		       {
+		    	   if(words.charAt(i)!=words.charAt(words.length()-1-i))
+		    	   {
+		    		   checkPalindrome = false;
+		    	   }
+		       }
+		       
+		       if(checkPalindrome)
+		       {
+		    	   System.out.println("yes it is palindrome");
+		       }
+		       else
+		       {
+		    	   System.out.println("No it is not alindrome");
+		       }
+		       
+		       
+		       
+		       
+
+		/*==========Question 8: Remove Whitespace==========*/
+		       
+		       String datas = "  Hello \t World \n Java  ";
+		       
+		       StringBuilder outs = new StringBuilder();
+		       
+		       char [] ch2 = datas.toCharArray();
+		       
+		       for(int i=0;i<datas.length()-1;i++)
+		       {
+		    	   if(!Character.isWhitespace(ch2[i]))
+		    	   {
+		    		   outs.append(ch2[i]);
+		    	   }
+		       }
+		       
+		       System.out.println(outs);
+		       
+		       
+		       
+		       
+
+		/*==========Question 9: ArmStrong-Number==========*/
+		       
+		       
+		       int number = 153;
+		       
+		       int OrignalNumber = number ;
+		       
+		       int counts =  String.valueOf(number).length();
+		       
+		       int sum =0;
+		      
+		       
+		       while(number!=0)
+		       {
+		    	   int lastDigit = number %10;
+		    	   sum += Math.pow(lastDigit, countDigit);
+		    	   
+		       }
+		       
+		       
+
+		/*==========Question 10: Factorial==========*/
+
+		/*==========Question 11: Find a perfect number==========*/
+
+		/*==========Question 12: Count Number Of Digits==========*/
+		
+
+
+	
+
+
+}
+
+}

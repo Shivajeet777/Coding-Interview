@@ -1,0 +1,6 @@
+package com.sk;
+
+public class PensSecond extends Pen
+{
+
+}

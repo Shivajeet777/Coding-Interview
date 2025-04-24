@@ -1,0 +1,26 @@
+package com.sk;
+
+public class PenMain {
+
+	public static void main(String[] args) 
+	{
+		
+	  People obj = new People();
+	   Thread t1= new Thread(obj);
+	   System.out.println(t1.getName());
+	   Thread t2= new Thread(obj);
+	   System.out.println(t2.getName());
+	   Thread t3= new Thread(obj);
+	   System.out.println(t3.getName());
+		
+	   Thread t4= new Thread(obj);
+	   System.out.println(t2.getName());
+		
+	   Thread t5= new Thread(obj);
+	   System.out.println(t2.getName());
+		
+		
+
+	}
+
+}

@@ -1,0 +1,19 @@
+package com.ss;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class Mains {
+
+	public static void main(String[] args) 
+	{
+		List<String> fruits = Arrays.asList("Mango","Apple","Khajoor");
+		
+		for(String sk:fruits)
+		{
+			System.out.println(sk);
+		}
+
+	}
+
+}
